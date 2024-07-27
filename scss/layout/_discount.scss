@@ -1,0 +1,104 @@
+.discount {
+	.discount__container {
+		padding: 69px 56px;
+		background-image: url('../images/kalonka.png'), url('../images/discount-bg.jpg');
+		background-position:
+			center right 44px,
+			center right;
+		background-repeat: no-repeat;
+		background-color: #000;
+		.discount__subtitle {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 20px;
+			color: $button-green;
+			margin-bottom: 32px;
+		}
+
+		.discount__title {
+			font-family: 'Inter', sans-serif;
+			width: 443px;
+			color: #fff;
+			font-size: 48px;
+			line-height: 60px;
+			letter-spacing: 1.92px;
+			font-weight: 600;
+			margin-bottom: 32px;
+		}
+
+		.discount__time-wrapper {
+			display: flex;
+			align-items: center;
+			gap: 24px;
+			margin-bottom: 54px;
+		}
+
+		.discount__time-item {
+			text-align: center;
+			padding: 14px 17px;
+			background-color: #fff;
+			border-radius: 50%;
+		}
+
+		.discount__time-item:nth-child(3) {
+			padding: 14px 10px;
+		}
+
+		.discount__time-item:nth-child(4) {
+			padding: 14px 7px;
+		}
+
+		.discount__time-num {
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+		}
+
+		.discount__time-text {
+			font-size: 11px;
+			line-height: 18px;
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+	.discount {
+		.discount__container {
+			.discount__time-item {
+				padding: 5px 13px;
+			}
+
+			.discount__time-item:nth-child(3) {
+				padding: 5px 8px;
+			}
+
+			.discount__time-item:nth-child(4) {
+				padding: 5px 8px;
+			}
+
+			.discount__time-num {
+				font-size: 14px;
+			}
+
+			.discount__time-text {
+				font-size: 8px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+	.discount {
+		.discount__container {
+			padding: 69px 20px;
+			.discount__title {
+				width: 300px;
+				font-size: 38px;
+			}
+
+			.discount__time-wrapper {
+				gap: 14px;
+			}
+		}
+	}
+}

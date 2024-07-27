@@ -1,0 +1,56 @@
+.sale {
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	.sale__container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 12px;
+
+		.sale__text {
+			font-size: 14px;
+			line-height: 21px;
+			margin-left: auto;
+		}
+
+		.sale__link {
+			margin-left: 8px;
+			color: #ffff;
+			font-weight: 600;
+		}
+
+		.sale__lang-inner {
+			margin-left: auto;
+		}
+
+		.sale__lang {
+			background-color: transparent;
+			border: none;
+			padding: 2px 3px;
+		}
+
+		.sale__lang:focus {
+			outline: 1px solid white;
+			border-radius: 2px;
+		}
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+	.sale {
+		.sale__container {
+			flex-direction: column;
+			.sale__text {
+				margin-left: 0;
+				margin-bottom: 10px;
+				font-size: 12px;
+			}
+			.sale__lang-inner {
+				margin-left: 0;
+			}
+		}
+	}
+}

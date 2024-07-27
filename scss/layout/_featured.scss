@@ -1,0 +1,145 @@
+.featured {
+	padding: 70px 0 0 0;
+
+	.featured__subtitle {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		color: $secondary-color;
+		font-weight: 600;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+
+	.featured__title {
+		font-size: 36px;
+		font-weight: 600;
+		line-height: 48px;
+		letter-spacing: 1.44px;
+		margin-bottom: 60px;
+	}
+
+	.featured__content {
+		display: flex;
+		align-items: start;
+		gap: 30px;
+	}
+
+	.featured__item {
+		color: #fff;
+		border-radius: 4px;
+	}
+
+	.playstation {
+		width: 570px;
+		height: 600px;
+		padding: 446px 32px 32px 32px;
+		background-image: url('../images/playstation-5-img.png');
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-color: #000;
+	}
+
+	.featured__item-title {
+		font-family: 'Inter', sans-serif;
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: 0.72px;
+		margin-bottom: 16px;
+	}
+
+	.featured__item-text {
+		width: 242px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		margin-bottom: 16px;
+		color: #fafafa;
+	}
+
+	.featured__item-link {
+		color: #ffffff;
+		text-decoration: none;
+		border-bottom: 1px solid gray;
+		padding-bottom: 1px;
+	}
+
+	.featured__item-wrapper {
+		width: 570px;
+	}
+
+	.women-item {
+		padding: 138px 24px 24px 24px;
+		background-color: #000;
+		background-image: url('../images/girl-with-heat.jpg');
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		margin-bottom: 30px;
+	}
+
+	.featured__item-wrapper {
+		display: flex;
+		gap: 30px;
+	}
+
+	.speaker-item {
+		padding: 175px 5px 24px 24px;
+		background-color: #000;
+		background-image: url('../images/speaker.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.speaker-title {
+		margin-bottom: 8px;
+	}
+
+	.speaker-text {
+		margin-bottom: 8px;
+	}
+
+	.parfume-item {
+		padding: 177px 5px 24px 24px;
+		background-color: #000;
+		background-image: url('../images/parfume.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.parfume-title {
+		margin-bottom: 8px;
+	}
+
+	.parfume-text {
+		margin-bottom: 8px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+	.featured {
+		.playstation {
+			height: auto;
+			padding: 138px 24px 24px;
+			width: 300px;
+			background-position: center bottom;
+			background-size: 250px;
+		}
+
+		.featured__item-wrapper {
+			width: 300px;
+		}
+
+		.featured__item-wrapper {
+			flex-direction: column;
+		}
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1130px) {
+	.featured {
+		.featured__content {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

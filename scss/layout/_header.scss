@@ -1,0 +1,138 @@
+.header {
+	padding-top: 40px;
+	padding-bottom: 16px;
+	.header__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo__link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.nav__list {
+			display: flex;
+			list-style: none;
+			gap: 48px;
+		}
+
+		.nav__link {
+			text-decoration: none;
+			font-size: 16px;
+			color: $text-color;
+		}
+
+		.nav__link-active {
+			border-bottom: 1px solid #000;
+		}
+
+		.header-right {
+			display: flex;
+		}
+
+		.header-right__search-inner {
+			padding: 7px 12px 7px 20px;
+			display: flex;
+			background-color: $gray-color;
+			border-radius: 4px;
+		}
+
+		.header-right__search {
+			width: 158px;
+			margin-right: 34px;
+			font-size: 12px;
+			line-height: 18px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+
+		.search__btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			background-color: transparent;
+			border: none;
+		}
+
+		.cart__inner {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			margin-left: 24px;
+		}
+
+		.cart__btn {
+			border: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: transparent;
+		}
+
+		.header__bottom {
+			display: none;
+			position: fixed;
+			z-index: 100;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			align-items: center;
+			justify-content: space-evenly;
+			background-color: rgba(243, 243, 243, 0.7);
+			backdrop-filter: blur(5px);
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+
+		.cart__btn-bottom {
+			border: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: transparent;
+		}
+
+		.cart__inner-bottom {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 16px;
+			margin-left: 24px;
+		}
+
+		.header-right-bottom__search-inner {
+			display: flex;
+			justify-content: space-between;
+			width: 90%;
+			padding: 7px 12px 7px 20px;
+			background-color: $gray-color;
+			border-radius: 4px;
+			border: 1px solid gray;
+		}
+
+		.header-right-bottom__search {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 975px) {
+	.header {
+		.header__container {
+			.nav {
+				display: none;
+			}
+			.header-right__search-inner {
+				display: none;
+			}
+
+			.header__bottom {
+				display: flex;
+			}
+		}
+	}
+}

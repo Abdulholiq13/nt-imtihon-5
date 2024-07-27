@@ -1,0 +1,31 @@
+/* GLOBAL */
+html {
+	height: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	background-color: #fff;
+	color: #222;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
