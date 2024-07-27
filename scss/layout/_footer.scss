@@ -1,0 +1,83 @@
+.footer {
+	background-color: #000;
+	.footer__container {
+		padding: 80px 0 78px 0;
+		color: #fff;
+		display: flex;
+		align-items: start;
+		gap: 77px;
+	}
+
+	.footer__logo {
+		font-family: 'Inter', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 24px; /* 100% */
+		letter-spacing: 0.72px;
+	}
+
+	.footer__title {
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 28px;
+		margin-bottom: 24px;
+	}
+
+	.footer__sale-text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
+
+	.footer__text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
+
+	.footer__text-small {
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 18px;
+		opacity: 0.7;
+	}
+
+	.social__list {
+		display: flex;
+		list-style: none;
+		gap: 24px;
+	}
+
+	.footer__input-inner {
+		display: flex;
+		align-items: center;
+		padding: 12px 15px;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		& input {
+			border: none;
+			background-color: transparent;
+		}
+	}
+
+	.copyright {
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+
+		padding-bottom: 24px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1230px) {
+	.footer {
+		.footer__container {
+			flex-wrap: wrap;
+		}
+	}
+}
